@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Raju Kartik}{Jha}{ \urlstyle{same}\url{http://rajujha.me} \\
+\href{mailto:rajujha373@gmail.com}{rajujha373@gmail.com} | 79 8267 7058
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{GGSIP University}
+\descript{BTech in Computer Science}
+\location{Expected Aug 2019 | Delhi, IN \\ Cum. GPA: 8.8}
+\sectionsep
+
+\subsection{M.K. Convent School}
+\descript{High School}
+\location{May 2014 | Delhi, IN}
+11/12th in Science \\
+\location{ Marks Secured: 87.2\% 
+}
+\sectionsep
+
+\subsection{Suryodaya English School}
+\descript{Secondary School}
+\location{May 2012 | Damak, NP}
+10th in Science \\
+\location{ Marks Secured: 85.88\%
+}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{\textbf{Over 5000 lines:}}
+Python \textbullet{} JavaScript \textbullet{} HTML \textbullet{} CSS \textbullet{} Django \textbullet{}  \\ 
+\location{\textbf{Over 1000 lines:}}
+C \textbullet{} C++ \textbullet{} \LaTeX\ \textbullet{} Assembly \\
+\location{\textbf{Familiar:}}
+Octave \textbullet{} Unity \textbullet{} Android \textbullet{} MySQL
+
+\sectionsep
+\subsection{Tools}
+AWS \textbullet{} Heroku \textbullet{} Git \textbullet{} TravisCLI
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/rajujha373}{\custombold{rajujha373}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/rajujha373}{\custombold{rajujha373}} \\
+Twitter://  \href{https://twitter.com/encipherer889}{\custombold{@encipherer889}} \\
+Quora://  \href{https://www.quora.com/profile/Raju-Jha-3}{\custombold{Raju-Jha-3}}\\
+CodeChef:// \href{https://www.quora.com/encipherer889}{\custombold{encipherer889}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Relevenet Coursework}
+Data Structures and
+Algorithms, Computer
+Graphics, Databases, \\
+Automata Theory, \\
+Computer Architecture, \\
+Software Engineering, Machine
+Learning 
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{\href{https://readthedocs.org}{ReadtheDocs.org}}
+\descript{| Open source contributor }
+\location{Jan 2017 – Present | \href{http://readthedocs.org}{readthedocs.org}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Frequent contributor to the RTD organization with 3 of 6 Pull Request merged to their official website \href{https://readthedocs.org}{readthedocs.org}. 
+\item Currently working on the aim to shift the current Elasticsearch module for search to python based Elasticsearch-dsl.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://songdew.com}{Songdew Network}}
+\descript{| Web Engineering Intern }
+\location{ Jan 2018 – Present | Gurugram, HR}
+\begin{tightemize}
+\item Created cloud data synchronization between Android App and Django Based Backend Server.
+\item Worked with MongoDB, Django MemCache and other useful tools.
+\item Implemented the PayTM Payment Gateway and a shopping cart for virtual shopping of tracks and albums.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://trucar.in}{TruCar.IN}}
+\descript{| Web Development Intern }
+\location{Aug 2017 – Oct 2017 | Laxmi Nagar, DL}
+\begin{tightemize}
+\item Worked with the team of 2 on the partner website \href{http://www.dieticianforhealth.com}{dieticianforhealth.com} where python has been used for backend.
+\item Implemented Oauth API, Facebook Graph API, Instagram and Twitter API along with Instamojo API for payments.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.epi.gov.in/content/}{Engineering Projects (India) LTD}}
+\descript{| Summer Trainee }
+\location{Jun 2017 – Aug 2017 | Lodhi Road, DL }
+\begin{tightemize}
+\item Learnt the basics of HTML, CSS, JS and Java Servlets.
+\item Implemented the learnt by making an online noticeboard system for notice management by the company.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{ OrderMate }
+\descript{| \href{https://github.com/encipherers/ordermate}{GITHUB} }
+Redefining the way we deal with the orders in food courts. Based on the Django backend, it uses REST API to sync data between the vendor's web portal and the customer's mobile application. Here, customers can book orders, receive orders, make online payments and much more without going to the food stall.
+\sectionsep
+
+\runsubsection{ NoZheimers }
+\descript{| \href{https://github.com/encipherers/NoZimers}{GITHUB} }
+An AI based application which can help the Alzheimer's patients to remember things. Based on Microsoft's Face Recognition API, this app notifies about each and every person the patient has ever met and provides their personal details like date and time of last meet, relation with the patient, name.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\begin{tabular}{rll}
+2018	     & Web Department Head  & \href{http://tedxdabri.in}{TEDxDabri}\\
+2017	     & 1\textsuperscript{st} Runner-Up  & HackData Hackathon\\
+2017	     & 5\textsuperscript{th}/120 teams  & HackDTU Hackathon\\
+2014         & 2310/2400 Score & SAT Subject Test\\    
+2012	     & 4\textsuperscript{th}/120  & SLC Examination\\
+
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}
