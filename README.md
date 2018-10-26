@@ -1,5 +1,4 @@
-# Resume
+## Resume
+This Resume is made using LATEX
 
-My Resume made using LATEX
-
-Template Name: [DeedyResume](https://github.com/deedy/Deedy-Resume)
+You can get the template details here: Template Name is [DeedyResume](https://github.com/deedy/Deedy-Resume)
